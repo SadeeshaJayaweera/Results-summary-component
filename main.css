@@ -1,0 +1,162 @@
+body{
+    background-color: hwb(0 100% 0%);
+}
+p{
+    font-size: 18px;
+    font-family: 'Fraunces', serif;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h2{
+    font-size: 22px;
+    font-family: 'Fraunces', serif;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+.container{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    height: 400px;
+    margin-top: 12%;
+    border: 25px;
+   
+
+}
+
+.left-hand-side{
+    background-color: hsl(252, 91%, 55%);
+    height: 400px;
+    width: 40%;
+    text-align: center;
+    border-radius: 20px;
+    padding-right: 10px;
+}
+
+.circle small{
+    font-size: 15px;
+    padding-bottom: 100px;
+    color: hsl(241, 100%, 89%);
+}
+
+
+
+.result{
+    color: hsl(241, 100%, 89%);
+    font-weight: 200px;
+}
+
+.circle{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin-left: 25%;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  background: rgb(65, 10, 215);
+}
+
+.circle h3{
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+
+.Great{
+    color: hsl(0, 0%, 100%);
+}
+
+.para{
+    color: hsl(241, 100%, 89%);
+    line-height: 1px;
+    
+}
+.para p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.right-hand-side{
+    background-color: hsl(0, 0%, 100%);
+    height: 400px;
+    width: 40%;
+    padding-left: 30px;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: -10px;
+    
+}
+
+.Summary{
+    color: black;
+
+}
+
+.score {
+    font-weight: 800px;
+    color: black;
+    margin-left: 20px       ;
+}
+
+.bold{
+    color: hsl(249, 4%, 61%);
+    font-weight: 800px;
+}
+
+.reaction{
+    color: hsl(0, 100%, 67%);
+
+}
+
+.Memory{
+   color: hsl(39, 100%, 56%);
+}
+
+.Verbal{
+    color: hsl(166, 100%, 37%);
+}
+
+.Visual{
+    color: hsl(234, 85%, 45%);
+}
+
+.continue{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    height: 40px;
+    width: 250px;
+    border-radius: 25px;
+    font-size: 17px;
+}
+
+.right-hand-side p{
+    border-style: none;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 60px;
+}
+
+.reaction{
+    background-color: hsl(0, 64%, 96%);
+  
+}
+
+.Memory{
+    background-color: hsl(55, 69%, 90%);
+}
+
+.Verbal{
+    background-color: hsl(164, 67%, 90%);
+}
+
+.Visual{
+    background-color: hsl(236, 54%, 90%);
+}
+
