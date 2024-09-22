@@ -1,162 +1,187 @@
-body{
-    background-color: hwb(0 100% 0%);
-}
-p{
-    font-size: 18px;
-    font-family: 'Fraunces', serif;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-
+@font-face {
+    font-family: Hanken-Grotesk;
+    src: url(./fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
-h2{
-    font-size: 22px;
-    font-family: 'Fraunces', serif;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    
+body {
+    font-family: Hanken-Grotesk;
+    background-color: white;
+    font-weight: 500;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+
 }
 
-
-.container{
-    position: relative;
-    margin: auto;
-    width: 50%;
+main {
+    box-shadow: 10px 10px 30px rgb(220, 220, 220);
     display: flex;
-    height: 400px;
-    margin-top: 12%;
-    border: 25px;
-   
+    width: min-content;
 
 }
 
-.left-hand-side{
-    background-color: hsl(252, 91%, 55%);
-    height: 400px;
-    width: 40%;
-    text-align: center;
+/**************** Result  ****************/
+
+.result {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 20px;
-    padding-right: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 19rem;
+    box-sizing: border-box;
+    padding: 1.3rem;
+
+
 }
 
-.circle small{
-    font-size: 15px;
-    padding-bottom: 100px;
+.result h1 {
     color: hsl(241, 100%, 89%);
+    font-size: 1.1rem;
+
 }
 
 
 
-.result{
+.white {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.paleblue {
     color: hsl(241, 100%, 89%);
-    font-weight: 200px;
+    margin: 0;
+    padding: 1rem;
+
 }
 
-.circle{
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  margin-left: 25%;
-  color: hsl(0, 0%, 100%);
-  text-align: center;
-  background: rgb(65, 10, 215);
-}
+/*********** Circle ***********/
 
-.circle h3{
-    padding-top: 50px;
-    font-size: 50px;
-}
-
-
-.Great{
-    color: hsl(0, 0%, 100%);
-}
-
-.para{
+.circle {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
     color: hsl(241, 100%, 89%);
-    line-height: 1px;
-    
-}
-.para p{
-    font-size: 15px;
-    font-weight: 400;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-.right-hand-side{
-    background-color: hsl(0, 0%, 100%);
-    height: 400px;
-    width: 40%;
-    padding-left: 30px;
-    border-radius: 0px 20px 20px 0px;
-    margin-left: -10px;
-    
-}
-
-.Summary{
-    color: black;
 
 }
 
-.score {
-    font-weight: 800px;
-    color: black;
-    margin-left: 20px       ;
+.circle h2 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
 }
 
-.bold{
-    color: hsl(249, 4%, 61%);
-    font-weight: 800px;
+.circle p {
+    margin: 0;
+
 }
 
-.reaction{
+
+
+/**************** Summary ****************/
+
+.summary {
+    display: grid;
+    box-sizing: border-box;
+    padding: 2rem;
+    color: hsl(224, 30%, 27%);
+}
+
+table {
+    width: 15rem;
+    font-weight: 700;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th img {
+    vertical-align: middle;
+    margin: 0.5rem;
+}
+
+.rowred {
+    background-color: hsla(0, 100%, 67%, 0.060);
     color: hsl(0, 100%, 67%);
-
 }
 
-.Memory{
-   color: hsl(39, 100%, 56%);
-}
-
-.Verbal{
+.rowgreen {
+    background-color: hsla(166, 100%, 37%, 0.060);
     color: hsl(166, 100%, 37%);
+
 }
 
-.Visual{
+
+.rowyellow {
+    background-color: hsla(39, 100%, 56%, 0.060);
+    color: hsl(39, 100%, 56%);
+
+}
+
+.rowblue {
+    background-color: hsla(234, 85%, 45%, 0.055);
     color: hsl(234, 85%, 45%);
 }
 
-.continue{
-    color: hsl(0, 0%, 100%);
+.cien {
+    color: hsl(240, 0%, 56%);
+}
+
+.variable{
+    color: hsl(224, 30%, 27%);
+}
+
+button {
     background-color: hsl(224, 30%, 27%);
-    height: 40px;
-    width: 250px;
-    border-radius: 25px;
-    font-size: 17px;
-}
-
-.right-hand-side p{
     border-style: none;
-    border-radius: 8px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 60px;
+    color: hsl(221, 100%, 96%);
+    font-size: 1rem;
+    font-weight: 700;
+    height: 3rem;
+    border-radius: 40px;
+    margin-top: 2rem;
 }
 
-.reaction{
-    background-color: hsl(0, 64%, 96%);
-  
+button:hover{
+    background-image: linear-gradient( #4e21ca,  #2e2be9);
 }
 
-.Memory{
-    background-color: hsl(55, 69%, 90%);
-}
+/**************** Mobile version  ****************/
 
-.Verbal{
-    background-color: hsl(164, 67%, 90%);
-}
+@media (max-width:375px) {
 
-.Visual{
-    background-color: hsl(236, 54%, 90%);
-}
+    body{
+        margin: 0;
+        
 
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .result{
+        width: 100vw;
+        border-radius: 0px 0px 2rem 2.5rem;
+        
+    }
+
+  .summary{
+    margin: 0;
+  }
+  table{
+    width: 100%;
+  }
+    
+}
