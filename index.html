@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results summary</title>
+    <link rel="stylesheet" href="assets/style.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./main.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  
-  <title>Frontend Mentor | Results summary component</title>
 </head>
+
 <body>
-<div class="container">
-  <div class="left-hand-side">
-    <h2 class="result"> Your Result</h2>
-    <!---The Circle Part of the Code -->
-    <div class="circle">
-      <h3>76<br><small>of 100</small></h3>
-      
-    </div>
-    <h2 class="Great">Great</h2>
-    <div class="para">
-      <p>You scored higher than 65% of </p>
-      <p>the people who have taken</p>
-      <p>these tests.</p>
-    </div>
-    </div>
 
-    <div class="right-hand-side">
-      <h2 class="summary">Summary</h2>
-      <p class="reaction"><span class="material-symbols-outlined">bolt</span> Reaction <span class="score"> 80</span><span class="bold">/100</span></p>
-      <p class="Memory"><span class="material-symbols-outlined">neurology</span> Memory <span class="score"> 92</span><span class="bold">/100</span></p>
-      <p class="Verbal"><span class="material-symbols-outlined">maps_ugc</span> Verbal <span class="score">&nbsp;&nbsp;&nbsp; 61</span><span class="bold">/100</span></p>
-      <p class="Visual"><span class="material-symbols-outlined"> visibility</span> Visual <span class="score">&nbsp;&nbsp; 72</span><span class="bold">/100</span></p>
-      <br>
+    <main>
+        <section class="result">
+            <h1>Your Result</h1>
+            <div class="circle">
+                <h2>76</h2>
+                <p>of 100</p>
+            </div>
+            <p class="white">Great</p>
+            <p class="paleblue">You scored higher than 65% of the people who have taken these tests.</p>
 
-      <button class="continue ">Continue</button>
-    </div>
 
-</div>
+        </section>
 
-  
+        <section class="summary">
+            <h2>Summary</h2>
+            <table>
+                
+                    <tr class="rowred">
+                        <th class="red"> <img src="assets/images/icon-reaction.svg" alt="thunder icon"> Reaction </th>
+                        
+                        <td class="variable">80</td>
+                        <td class="cien">/ 100</td>
+                    </tr>
+
+                    <tr class="rowyellow">
+
+                        <th class="yellow"> <img src="assets/images/icon-memory.svg" alt="brain icon"> Memory</th>
+                        
+                        <td class="variable">92</td>
+                        <td class="cien">/ 100</td>
+                    </tr>
+
+                    <tr class="rowgreen">
+                        <th class="green"> <img src="assets/images/icon-verbal.svg" alt="chat icon"> Verbal</th>
+                        
+                        <td class="variable">61</td>
+                        <td class="cien">/ 100</td>
+                    </tr>
+
+
+                    <tr class="rowblue">
+                        <th class="blue"> <img src="assets/images/icon-visual.svg" alt="eye icon"> Visual </th>
+                       
+                        <td class="variable">72</td>
+                        <td class="cien">/ 100</td>
+                    </tr>
+                
+            </table>
+            <button> Continue </button>
+        </section>
+    </main>
+
 </body>
+
 </html>
